@@ -81,6 +81,12 @@
                 <div class="title m-b-md">
                     STRANGE PEOPLE
                 </div>
+                <?php
+                if(DB::connection()->getDatabaseName())
+                {
+                    echo "Connected to database ".DB::connection()->getDatabaseName();
+                }
+                ?>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Catalog</a>
