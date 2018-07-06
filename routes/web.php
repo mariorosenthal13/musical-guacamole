@@ -18,3 +18,23 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
+
+Route::get('/catalog', function () {
+    return view('catalog');
+});
+
+Route::get('/artists', function () {
+    return view('artists');
+});
+
+Route::get('/events', function () {
+    return view('events');
+});
+
+Route::get('/media', function () {
+    return view('media');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
