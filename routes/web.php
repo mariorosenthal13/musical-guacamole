@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('main');
+//    return view('main');
+    return view('pages.home');
 });
 
 Route::get('/home', function () {
@@ -24,6 +25,13 @@ Route::get('/catalog', function () {
 });
 
 Route::get('/artists', function () {
+    $data = [
+      'bodyclass' => 'gallery-photogallery'
+    ];
+    return view('pages.artists', compact('data'));
+});
+
+Route::get('/artists1', function () {
     return view('artists');
 });
 

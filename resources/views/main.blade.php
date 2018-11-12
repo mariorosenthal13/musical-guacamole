@@ -15,7 +15,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Animate css -->
-    <link rel="stylesheet" type="text/css" href="resources/css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
     <!-- Player css -->
     <link href="css/player.css" rel="stylesheet">
     <!-- Bootstrap Formhelpers -->

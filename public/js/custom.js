@@ -457,7 +457,7 @@ jQuery(function ($) {
         var html = '<div class="grid-item grid-item--width1" >' +
             '<a href="11-Blog-Single-Post.html ">\n' +
             '                <div class="grid-item-img">\n' +
-            '                    <img src="resources/images/13_blog_mansory.png" alt="Andre Benz"/>\n' +
+            '                    <img src="images/13_blog_mansory.png" alt="Andre Benz"/>\n' +
             '                </div>\n' +
             '                <div class="grid-item-content">\n' +
             '                    <div class="g_t">\n' +
@@ -474,7 +474,7 @@ jQuery(function ($) {
             + '<div class="grid-item grid-item--width2">' +
             '<a href="11-Blog-Single-Post.html ">\n' +
             '                <div class="grid-item-img">\n' +
-            '                    <img src="resources/images/hatim-belyamani.png" alt="Karim Boubker"/>\n' +
+            '                    <img src="images/hatim-belyamani.png" alt="Karim Boubker"/>\n' +
             '                </div>\n' +
             '                <div class="grid-item-content">\n' +
             '                    <div class="g_t">\n' +
@@ -501,14 +501,14 @@ jQuery(function ($) {
             '                    </div>\n' +
             '                </div>\n' +
             '                <div class="grid-item-img">\n' +
-            '                    <img src="resources/images/samuel-fyfe.png" alt="Samuel Fyfe">\n' +
+            '                    <img src="images/samuel-fyfe.png" alt="Samuel Fyfe">\n' +
             '                </div>\n' +
             '            </a>' +
             '</div>'
             +'<div class="grid-item grid-item--width4">' +
             '<a href="11-Blog-Single-Post.html ">\n' +
             '                <div class="grid-item-img">\n' +
-            '                    <img src="resources/images/mink-mingle.png" alt="">\n' +
+            '                    <img src="images/mink-mingle.png" alt="">\n' +
             '                </div>\n' +
             '                <div class="grid-item-content">\n' +
             '                    <div class="g_t">\n' +
