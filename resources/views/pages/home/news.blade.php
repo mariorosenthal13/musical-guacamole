@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="bg_image"></div>
+                    <div class="bg_image" style="background-image: url(https://picsum.photos/500x600)"></div>
                     <div class="overly"></div>
                     <div class="news_content news_content_3">
                         <h2>Dark Side</h2>

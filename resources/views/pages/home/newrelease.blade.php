@@ -5,41 +5,36 @@
         <!-- ALBUM RELEASE TITLE -->
         <div class="title">
             <div class="">
-                <h1>New Album</h1>
-                <p>Name Company</p>
+                <h1>Latest Release</h1>
+                <p>Baby Bumps</p>
             </div>
         </div>
         <!-- ALBUM RELEASE MUSIC -->
         <div class="row j_c">
             <div class="col sec_2_content">
+                <a href="https://www.beatport.com/release/baby-bumps/2434185" class="release_img">
+                    <img src="img/babybumps.jpg" alt="babybumps">
+                </a>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Our newest release avaialable for pre-order now on beatport
                 </p>
-                <p> Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque laudantium, totam rem aperiam.
+                <p> Orrrrr if you want just hit us up ,
+                    pay pal us some cash and well send you the files for the low low.
                 </p>
                 <div class="cta">
-                    <a href="#">BUY ALBUM FROM ITUNES</a>
+                    <a href="https://www.beatport.com/release/baby-bumps/2434185">BUY RELEASE FROM BEATPORT</a>
                 </div>
             </div>
             <div class="col music">
                 <div class="m_img" style="background-image: url(https://picsum.photos//900x150)"></div>
                 <div class="mp3 mp3_1">
-                    <span>1.Nicky Jam feat J.Balvin - X EQUIS</span>
-                    <audio controls class="audio1"><source src="/sounds/Nicky_Jam_feat_J_Balvin-X_EQUIS.mp3" type="audio/mpeg"></audio>
+                    <iframe src="https://embed.beatport.com/?id=11236786&type=track" width="100%" height="162" frameborder="0" scrolling="no" style="max-width:900px;"></iframe>
                 </div>
                 <div class="mp3 mp3_2">
-                    <span>2.Bruno Mars - That's What I Like</span>
-                    <audio controls class="audio1"><source src="/sounds/Bruno_Mars-That_s_What_I_Like.mp3" type="audio/mpeg"></audio>
+                    <iframe src="https://embed.beatport.com/?id=11236787&type=track" width="100%" height="162" frameborder="0" scrolling="no" style="max-width:900px;"></iframe>
                 </div>
                 <div class="mp3 mp3_3">
-                    <span>3.Cardi - I Like It</span>
-                    <audio controls class="audio1"><source src="/sounds/Cardi-I_Like_It.mp3" type="audio/mpeg"></audio>
+                    <iframe src="https://embed.beatport.com/?id=11236788&type=track" width="100%" height="162" frameborder="0" scrolling="no" style="max-width:900px;"></iframe>
                 </div>
             </div>
         </div>

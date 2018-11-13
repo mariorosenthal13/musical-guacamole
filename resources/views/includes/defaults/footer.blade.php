@@ -1,5 +1,20 @@
 
 <!-- START FOOTER SECTION -->
+<?php  $eventsobject = DB::table('events')->get();
+foreach ($eventsobject as $key => $event)
+{
+    $events[$key] = [
+        'id' => $event->id,
+        'day' => $event->day,
+        'month' => $event->month,
+        'year' => $event->year,
+        'city' => $event->city,
+        'state' => $event->state,
+        'name' => $event->name,
+        'venue' => $event->venue
+    ] ;
+}
+array_reverse($events);?>
 <footer id="footer">
     <div class="bg_image" style="background-image: url(https://picsum.photos/1920x1280)"></div>
     <div class="overly"></div>
@@ -7,77 +22,41 @@
         <div class="row footer">
             <div class="col">
                 <h2>ABOUT STRANGE PEOPLE</h2>
-                <p>Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. </p>
+                <p>We are a collective of underground artists united for the love of music.
+                Everyday we strive in maintaining the absolute perfect balance in musical freedom
+                while keeping the techno dream alive. In this chapter ouf our lives we have come
+                to grow our reach of people and to spread the good message of underground music to the people.
+                Most of us resive in Denver / Miami feel free to shoot us a message for inquires regarding booking
+                or if you just want to shoot the shit with us.</p>
             </div>
             <div class="col">
-                <h2>UPCOMING EVENT</h2>
+                <h2>UPCOMING EVENTS</h2>
+                <?php foreach($events as $event) {?>
                 <div class="day_num">
-                    <a href="05-Events-Single-Events.html">
-                        <span>19</span>
+                    <a href="">
+                        <span><?php echo $event['day']?></span>
                         <div>
-                            <p>Dec</p>
-                            <p>2018</p>
+                            <p><?php echo $event['month']?></p>
+                            <p><?php echo $event['year']?></p>
                         </div>
-                        <p>Coachella Festival</p>
+                        <p><?php echo $event['name']?></p>
                     </a>
                 </div>
-                <div class="day_num">
-                    <a href="05-Events-Single-Events.html">
-                        <span>14</span>
-                        <div>
-                            <p>Apr</p>
-                            <p>2018</p>
-                        </div>
-                        <p>Columbianhalle Festival</p>
-                    </a>
-                </div>
-                <div class="day_num">
-                    <a href="05-Events-Single-Events.html">
-                        <span>09</span>
-                        <div>
-                            <p>Jun</p>
-                            <p>2018</p>
-                        </div>
-                        <p>Torwar Festival</p>
-                    </a>
-                </div>
-                <div class="day_num">
-                    <a href="05-Events-Single-Events.html">
-                        <span>12</span>
-                        <div>
-                            <p>Dec</p>
-                            <p>2018</p>
-                        </div>
-                        <p>Ladesno Festival</p>
-                    </a>
-                </div>
+                <?php } ?>
             </div>
             <div class="col">
                 <div class="footer_logo">
                     <img src="img/strange-people-white.png" alt="Logo">
                 </div>
                 <div class="info">
-                    <p class="main_p">175 Grand Central Parkway</p>
-                    <p><a href="tel:+0001011010101">Phone: +00 (0) 101 1010 101</a></p>
-                    <p><a href="fax:+0001011010101">Fax: +00 (0) 101 1010 101</a></p>
-                    <p><a href="mailto:support@bets.com">Email: support@bets.com</a></p>
+                    <p class="main_p">Van Down By the River</p>
+                    <p><a href="tel: +1 (786) 818-0694">Phone: +1 (786) 818-0694</a></p>
+                    <p><a href="mailto:support@bets.com">Email: booking@strangeppl.com</a></p>
                 </div>
                 <div class="folow">
                     <ul>
-                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href=""><i class="fa fa-tripadvisor"></i></a></li>
+                        <li><a href="https://soundcloud.com/strangepeople_ofc"><i class="fa fa-soundcloud"></i></a></li>
+                        <li><a href="https://www.beatport.com/label/strange-people/72778"><i class="fa fa-headphones"></i></a></li>
                     </ul>
                 </div>
             </div>

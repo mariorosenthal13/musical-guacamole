@@ -12,167 +12,31 @@
         </div>
         <!-- TICKETS -->
         <div class="col tickets">
-            <div class="row ticket">
-                <div class="col">
-                    <div class="row">
-                        <a class="col-10 ticket-link" href="05-Events-Single-Events.html">
-                            <div class="day">
-                                <div class="day_num">
-                                    <span>12</span>
-                                    <div>
-                                        <p>Dec</p>
-                                        <p>2018</p>
+            <?php foreach( $events as $key => $event ) { ?>
+                <div class="row ticket">
+                    <div class="col">
+                        <div class="row">
+                            <a class="col-10 ticket-link" href="events/<?php echo $event['id'] ?>">
+                                <div class="day">
+                                    <div class="day_num">
+                                        <span><?php echo $event['day'] ?></span>
+                                        <div>
+                                            <p><?php echo $event['month'] ?></p>
+                                            <p><?php echo $event['year'] ?></p>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="name">
+                                    <p><span><?php echo $event['venue'] ?></span> // <span><?php echo $event['city'] ?>, <?php echo $event['state'] ?></span></p>
+                                </div>
+                            </a>
+                            <div class="col-2 buy">
+                                <a href="#">More Info</a>
                             </div>
-                            <div class="name">
-                                <p><span>Tap 1</span> // <span>Copenhagen, Denmark</span></p>
-                            </div>
-                        </a>
-                        <div class="col-2 buy">
-                            <a href="#">Buy Ticket</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row ticket">
-                <div class="col">
-                    <div class="row">
-                        <a class="col-10 ticket-link" href="05-Events-Single-Events.html">
-                            <div class="day">
-                                <div class="day_num">
-                                    <span>16</span>
-                                    <div>
-                                        <p>Dec</p>
-                                        <p>2018</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="name">
-                                <p><span>Columbianhalle</span> // <span>Berlin, Germany</span></p>
-                            </div>
-                        </a>
-                        <div class="col-2 buy">
-                            <a href="#">Buy Ticket</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row ticket">
-                <div class="col">
-                    <div class="row">
-                        <a class="col-10 ticket-link" href="05-Events-Single-Events.html">
-                            <div class="day">
-                                <div class="day_num">
-                                    <span>19</span>
-                                    <div>
-                                        <p>Dec</p>
-                                        <p>2018</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="name">
-                                <p><span>Torwar</span> // <span>Warsaw, Poland</span></p>
-                            </div>
-                        </a>
-                        <div class="col-2 buy">
-                            <a href="#">Buy Ticket</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row ticket">
-                <div class="col">
-                    <div class="row">
-                        <a class="col-10 ticket-link" href="05-Events-Single-Events.html">
-                            <div class="day">
-                                <div class="day_num">
-                                    <span>16</span>
-                                    <div>
-                                        <p>Dec</p>
-                                        <p>2018</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="name">
-                                <p><span>Columbianhalle</span> // <span>Berlin, Germany</span></p>
-                            </div>
-                        </a>
-                        <div class="col-2 buy">
-                            <a href="#">Buy Ticket</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row ticket">
-                <div class="col">
-                    <div class="row">
-                        <a class="col-10 ticket-link" href="05-Events-Single-Events.html">
-                            <div class="day">
-                                <div class="day_num">
-                                    <span>19</span>
-                                    <div>
-                                        <p>Dec</p>
-                                        <p>2018</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="name">
-                                <p><span>Torwar</span> // <span>Warsaw, Poland</span></p>
-                            </div>
-                        </a>
-                        <div class="col-2 buy">
-                            <a href="#">Buy Ticket</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row ticket">
-                <div class="col">
-                    <div class="row">
-                        <a class="col-10 ticket-link" href="05-Events-Single-Events.html">
-                            <div class="day">
-                                <div class="day_num">
-                                    <span>16</span>
-                                    <div>
-                                        <p>Dec</p>
-                                        <p>2018</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="name">
-                                <p><span>Columbianhalle</span> // <span>Berlin, Germany</span></p>
-                            </div>
-                        </a>
-                        <div class="col-2 buy">
-                            <p>Sold Out!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row ticket">
-                <div class="col">
-                    <div class="row">
-                        <a class="col-10 ticket-link" href="05-Events-Single-Events.html">
-                            <div class="day">
-                                <div class="day_num">
-                                    <span>19</span>
-                                    <div>
-                                        <p>Dec</p>
-                                        <p>2018</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="name">
-                                <p><span>Torwar</span> // <span>Warsaw, Poland</span></p>
-                            </div>
-                        </a>
-                        <div class="col-2 buy">
-                            <p>Cancelled</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php } ?>
         </div>
     </div>
 </section>

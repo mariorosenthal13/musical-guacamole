@@ -10,20 +10,20 @@
             </div>
         </div>
         <div class="form">
-            <form>
+        <?php echo Form::open(array('action' => 'EmailController@send')) ?>
                 <div class="row fild_1">
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" placeholder="Full name">
+                        <input type="text" class="form-control" name="name" placeholder="Full name">
                     </div>
                     <div class="col-sm-6">
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Email">
                     </div>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="content" rows="3" placeholder="Message"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
-            </form>
+        <?php echo Form::close() ?>
         </div>
     </div>
 </section>
